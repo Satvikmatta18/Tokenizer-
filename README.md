@@ -86,7 +86,7 @@ If the model sees a word it never saw during training, it becomes `<unk>`.
 ["Hello, world!"]
 ```
 
-**Vocabulary (partial)**
+**Vocabulary**
 
 ```
 <pad> → 0
