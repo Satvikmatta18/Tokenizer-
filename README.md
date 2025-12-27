@@ -25,7 +25,7 @@ What changes is **what counts as a token**.
 ["Hello, world!"]
 ```
 
-**Vocabulary (simplified)**
+**Vocabulary**
 
 ```
 <pad> → 0
@@ -55,7 +55,7 @@ Output text: "hello, world!"
 
 ---
 
-### How it works (simple explanation)
+### How it works
 
 * The tokenizer **splits text into words and punctuation**
 * Every unique word becomes its own token
@@ -122,7 +122,7 @@ Output text: "hello, world!"
 
 ---
 
-### How it works (simple explanation)
+### How it works
 
 * Every **single character** is treated as a token
 * The vocabulary is just:
@@ -152,7 +152,7 @@ Sequences get very long (bad for transformers)
 ["low", "lower", "lowest"]
 ```
 
-**Learned subword tokens (simplified)**
+**Learned subword tokens**
 
 ```
 low</w>
@@ -177,7 +177,7 @@ Output text: "low lower lowest"
 
 ---
 
-### How it works (simple explanation)
+### How it works 
 
 * Starts by splitting words into **characters**
 * Learns which character pairs appear together most often
@@ -203,7 +203,7 @@ Output text: "low lower lowest"
 "hello, BPE on bytes!"
 ```
 
-**UTF-8 bytes (conceptual)**
+**UTF-8 bytes**
 
 ```
 [104, 101, 108, 108, 111, 44, 32, 66, 80, 69, ...]
@@ -225,7 +225,7 @@ Output text: "hello, bpe on bytes!"
 
 ---
 
-### How it works (simple explanation)
+### How it works 
 
 * Text is first converted into **raw UTF-8 bytes**
 * Each byte (0–255) becomes a base token
